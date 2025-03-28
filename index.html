@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Plants with iFrame</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+      canvas {
+        display: block;
+      }
+      #iframe-container {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+        border: none;
+        z-index: 10;
+      }
+    </style>
+    <!-- 修正 Mixed Content 問題，將 Google Fonts 的 URL 改為 HTTPS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
+  </head>
+  <body>
+    <div class="animsition">
+      <!-- 你的內容 -->
+    </div>
+    <script src="sketch.js"></script>
+    <!-- 確保使用 HTTPS 協議 -->
+    <iframe id="iframe-container" src="https://www.et.tku.edu.tw/" frameborder="0"></iframe>
+  </body>
+</html>
